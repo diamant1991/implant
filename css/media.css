@@ -1,0 +1,8 @@
+@media(min-width: 1500px){
+	.works .container {
+    width: 1500px;
+	}
+	.item-block{
+		padding: 0 16px;
+	}
+}
