@@ -1,5 +1,6 @@
 @media(min-width: 1500px){
-	.works .container {
+	.works .container,
+	.diploms .container {
     width: 1500px;
 	}
 	.item-block{
