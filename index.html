@@ -8,13 +8,13 @@
 	<meta name="description" content="">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,600,600italic,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/vendor.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header section" id="header">
 		<div class="container clearfix">
 			<div class="left-block">
 				<div class="logo">
@@ -28,7 +28,7 @@
 			</div>
 			<div class="header-center-block">
 				<div class="telephone clearfix">
-					<div class="text">Для консультации <br> по телефону, звоните:</div>
+					<div class="text hidden">Для консультации <br> по телефону, звоните:</div>
 					<div class="info">
 						<span>+7(495)</span> 790-70-05 
 					</div>
@@ -57,7 +57,7 @@
 						<input type="text" placeholder="Введите Ваше Имя">
 					</div>
 					<div class="input-block">
-						<input type="text" placeholder="Введите номер телефона">
+						<input type="text" class="tel-mask" placeholder="Введите номер телефона">
 					</div>
 					<div class="input-block send-block">
 						<input type="submit" value="заказать звонок" class="s-sub">
@@ -71,56 +71,56 @@
 	<nav class="nav">
 		<div class="container">
 			<ul class="nav-menu clearfix">
-				<li>
-					<a href="#">
+				<li class="nav__item">
+					<a href="#header" class="nav__item-link">
 						<i class="ico icon_1"></i>
 						<span>главная</span>
 					</a>
 				</li>
-				<li>
-					<a href="#">
+				<li class="nav__item">
+					<a href="#works" class="nav__item-link">
 						<i class="ico icon_2"></i>
 						<span>фото работ</span>
 					</a>
 				</li>
-				<li>
-					<a href="#">
+				<li class="nav__item">
+					<a href="#team" class="nav__item-link">
 						<i class="ico icon_3"></i>
 						<span>врачи</span>
 					</a>
 				</li>
-				<li>
-					<a href="#">
+				<li class="nav__item">
+					<a href="#review" class="nav__item-link">
 						<i class="ico icon_4"></i>
 						<span>отзывы</span>
 					</a>
 				</li>
-				<li>
-					<a href="#">
+				<li class="nav__item">
+					<a href="#tech" class="nav__item-link">
 						<i class="ico icon_5"></i>
 						<span>технологии</span>
 					</a>
 				</li>
-				<li>
-					<a href="#">
+				<li class="nav__item">
+					<a href="#action" class="nav__item-link">
 						<i class="ico icon_6"></i>
 						<span>акции</span>
 					</a>
 				</li>
-				<li>
-					<a href="#">
+				<li class="nav__item">
+					<a href="#sert" class="nav__item-link">
 						<i class="ico icon_7"></i>
 						<span>сертификаты</span>
 					</a>
 				</li>
-				<li>
-					<a href="#">
+				<li class="nav__item">
+					<a href="#price" class="nav__item-link">
 						<i class="ico icon_8"></i>
 						<span>цены</span>
 					</a>
 				</li>
-				<li>
-					<a href="#">
+				<li class="nav__item">
+					<a href="#contact" class="nav__item-link">
 						<i class="ico icon_9"></i>
 						<span>контакты</span>
 					</a>
@@ -130,7 +130,7 @@
 	</nav>
 	<!-- nav -->
 	
-	<div class="preim ">
+	<div class="preim">
 		<div class="container">
 			<h1>имплантация зубов в москве</h1>
 			<div class="title">
@@ -193,8 +193,12 @@
 				<img src="images/preim1.png" alt="">
 				<div class="descr">
 					<p>
-						 При установке имплантатов нашими специалистами, мы гарантируем положительный результат в 100% случаев. Применяемая нами методика позволяет нам утверждать это безоговорочно. От пациента требуется строгое соблюдение рекомендаций лечащего врача.
+						 Чемпион России по BioHorizons в категории "колличество" Ставит имплантаты в незметно для пациентов Лично установил более 200 имплантатов
 					</p>
+					<a href="#" class="more">
+						<i class="ico ico-more"></i>
+						<span>Подробнее</span>
+					</a>
 				</div>
 			</div>
 			<div class="opit2">
@@ -203,6 +207,7 @@
 					<p>
 						 Уже 9 лет мы наблюдаем наших пациентов, многие из которых стали нашими друзьями. Имплантаты, установленные 9 лет назад, надежно служат своим владельцам. Залог успеха - выполнять рекомендации врача и не забывать посещать стоматолога 1 раз в 6 месяцев.
 					</p>
+					
 				</div>
 			</div>
 			<div class="opit3">
@@ -240,13 +245,15 @@
 				<div class="title">
 					 Вы можете проконсультироваться удаленно:
 				</div>
-	 			<a href="#form-one" class="big_button fancybox"><i class="ico ico-ico_phone_white_big"></i>заказать консультацию по телефону</a>
+	 			<a class="big_button fancybox" data-toggle="modal" data-target="#get-call">
+	 				<i class="ico ico-ico_phone_white_big"></i>заказать консультацию по телефону</a>
 			</div>
 		</div>
 	</div>
 	<!-- consult_form -->
 
-	<div id="works" class="works sections">
+
+	<div id="works" class="works section sections">
 		<div class="container">
 			<div class="h1">
 				 Примеры наших работ по имплантации зубов.
@@ -463,13 +470,13 @@
 					 Вы также можете оставить заявку, <br>
 					 мы позвоним:
 				</div>
-	 			<a href="#form-one" data-title="Обсудить варианты лечения" class="big_button fancybox"><i class="ico ico-ico_button_ok"></i>Да, я хочу обсудить свою ситуацию</a>
+	 			<a data-title="Обсудить варианты лечения" class="big_button fancybox" data-toggle="modal" data-target="#get-call"><i class="ico ico-ico_button_ok"></i>Да, я хочу обсудить свою ситуацию</a>
 			</div>
 		</div>
 	</div>
 	<!-- consult_form2 -->
 
-	<div id="team" class="team sections">
+	<div id="team" class="team section sections">
 		<div class="container">
 			<div class="h1">
 			 	<b>Наш коллектив</b>
@@ -764,7 +771,7 @@
 					<input type="text" placeholder="Введите Ваше Имя">
 				</div>
 				<div class="input-block">
-					<input type="text" placeholder="Номер телефона(маска)*">
+					<input type="text" class="tel-mask" placeholder="Номер телефона(маска)*">
 				</div>
 				<div class="input-block">
 					<textarea placeholder="Если требуется введите комментарий"></textarea>
@@ -791,7 +798,7 @@
 	</div>
 	<!-- consult_form3 -->
 
-	<div class="review">
+	<div class="review section" id="review">
 		<div class="container">
 			<div class="item-title">
 				<p>Отзывы наших пациентов</p>
@@ -919,13 +926,13 @@
 				<div class="title">
 					 Или оставьте заявку на презентацию <br>в клинике:
 				</div>
-	 			<a href="#form-one" data-title="Обсудить варианты лечения" class="big_button fancybox"><i class="ico ico-ico_button_ok"></i>Да, я хочу обсудить свою презентацию</a>
+	 			<a data-title="Обсудить варианты лечения" class="big_button fancybox" data-toggle="modal" data-target="#get-call"><i class="ico ico-ico_button_ok"></i>Да, я хочу обсудить свою презентацию</a>
 			</div>
 		</div>
 	</div>
 	<!-- consult_form2 -->
 
-	<div class="technology">
+	<div class="technology section" id="tech">
 		<div class="container">
 			<div class="title">
 	 			<b>Технология имплантации зубов по шаблонам <br>
@@ -1076,7 +1083,7 @@
 			<div class="col-md-5">
 				<div class="row">
 					<div class="right-block">
-						<a href="#form-one" data-title="Обсудить варианты лечения" class="big_button fill fancybox">
+						<a data-title="Обсудить варианты лечения" class="big_button fill fancybox" data-toggle="modal" data-target="#get-call-2">
 							<i class="ico ico-ico_button_ok"></i>Заполнить заявку
 						</a>
 							<div class="title">
@@ -1089,7 +1096,7 @@
 	</div>
 	<!-- contact form -->
 
-	<div class="sentence">
+	<div class="sentence section" id="action">
 		<div class="container">
 			<div class="item-title">
 				Восплользуйтесь нашими предложениями
@@ -1138,7 +1145,10 @@
 									</div>
 								</div>
 								<div class="timer">
-									Таймер
+									<div class="timer-text">
+										Осталось до конца акции
+									</div>
+									<div class="countdown clearfix"></div>
 								</div>
 							</div>
 							<div class="sentence-bottom">
@@ -1185,7 +1195,7 @@
 										<div class="col-md-3">
 											<div class="row">
 												<div class="input-block">
-													<input type="text" placeholder="Номер телефона (маска)*">
+													<input type="text" class="tel-mask" placeholder="Номер телефона (маска)*">
 												</div>
 											</div>
 										</div>
@@ -1244,7 +1254,10 @@
 									</div>
 								</div>
 								<div class="timer">
-									Таймер
+									<div class="timer-text">
+										Осталось до конца акции
+									</div>
+									<div class="second-countdown clearfix"></div>
 								</div>
 							</div>
 							<div class="sentence-bottom">
@@ -1291,7 +1304,7 @@
 										<div class="col-md-3">
 											<div class="row">
 												<div class="input-block">
-													<input type="text" placeholder="Номер телефона (маска)*">
+													<input type="text" class="tel-mask" placeholder="Номер телефона (маска)*">
 												</div>
 											</div>
 										</div>
@@ -1318,7 +1331,7 @@
 	</div>
 	<!-- sentence -->
 	
-	<div class="diploms">
+	<div class="diploms section" id="sert">
 		<div class="container">
 			<div class="item-title">Дополнительная иформация о нас</div>
 			<div class="diploms-wrapp">
@@ -1482,15 +1495,15 @@
 								<div class="col-md-6">
 									<div class="row">
 										<div class="input-block">
-											<input type="text" placeholder="Номер телефона(маска)*">
+											<input type="text" class="tel-mask" placeholder="Номер телефона(маска)*">
 										</div>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="row">
-										<div class="input-block">
+										<div class="input-block input-submit">
 											<i class="ico ico-ico_button_ok"></i>
-											<input type="submit" value="Акция мне интересна" class="medium_button">
+											<input type="submit" value="отправить заявку" class="medium_button">
 										</div>
 									</div>
 								</div>
@@ -1501,6 +1514,474 @@
 			</div>
 		</div>
 	</div>
+	<!-- form -->
+
+	<div class="price section" id="price">
+		<div class="container">
+			<div class="item-title">
+				Цены на имплантацию зубов
+			</div>
+			<div class="price-wrapp">
+				<div class="price-title">
+					Имплантат + формирователь
+				</div>
+				<div class="carousel-wrapper">
+					<div class="owl-carousel owl-theme owl-price">
+						<div class="item">
+							<div class="price-item">
+								<div class="price-img">
+									<img src="images/01_dentium_all.gif" alt="">
+								</div>
+								<div class="price-total">
+									<b>39000</b> руб
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="price-item">
+								<div class="price-img">
+									<img src="images/01_dentium_all.gif" alt="">
+								</div>
+								<div class="price-total">
+									<b>39000</b> руб
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="price-item">
+								<div class="price-img">
+									<img src="images/01_dentium_all.gif" alt="">
+								</div>
+								<div class="price-total">
+									<b>39000</b> руб
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="price-item">
+								<div class="price-img">
+									<img src="images/01_dentium_all.gif" alt="">
+								</div>
+								<div class="price-total">
+									<b>39000</b> руб
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="price-item">
+								<div class="price-img">
+									<img src="images/01_dentium_all.gif" alt="">
+								</div>
+								<div class="price-total">
+									<b>39000</b> руб
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="price-item">
+								<div class="price-img">
+									<img src="images/01_dentium_all.gif" alt="">
+								</div>
+								<div class="price-total">
+									<b>39000</b> руб
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="price-item">
+								<div class="price-img">
+									<img src="images/01_dentium_all.gif" alt="">
+								</div>
+								<div class="price-total">
+									<b>39000</b> руб
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="price-item">
+								<div class="price-img">
+									<img src="images/01_dentium_all.gif" alt="">
+								</div>
+								<div class="price-total">
+									<b>39000</b> руб
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="customNavigation">
+					  <a class="btn prev">Previous</a>
+					  <a class="btn next">Next</a>
+					</div>
+				</div>
+				<div class="price-title">
+					Имплантатация "под ключ" (коронка МК)
+				</div>
+				<div class="carousel-wrapper">
+					<div class="owl-carousel owl-theme owl-price">
+						<div class="item">
+							<div class="price-item">
+								<div class="price-img">
+									<img src="images/01_dentium_all.gif" alt="">
+								</div>
+								<div class="price-total">
+									<b>39000</b> руб
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="price-item">
+								<div class="price-img">
+									<img src="images/01_dentium_all.gif" alt="">
+								</div>
+								<div class="price-total">
+									<b>39000</b> руб
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="price-item">
+								<div class="price-img">
+									<img src="images/01_dentium_all.gif" alt="">
+								</div>
+								<div class="price-total">
+									<b>39000</b> руб
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="price-item">
+								<div class="price-img">
+									<img src="images/01_dentium_all.gif" alt="">
+								</div>
+								<div class="price-total">
+									<b>39000</b> руб
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="price-item">
+								<div class="price-img">
+									<img src="images/01_dentium_all.gif" alt="">
+								</div>
+								<div class="price-total">
+									<b>39000</b> руб
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="price-item">
+								<div class="price-img">
+									<img src="images/01_dentium_all.gif" alt="">
+								</div>
+								<div class="price-total">
+									<b>39000</b> руб
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="price-item">
+								<div class="price-img">
+									<img src="images/01_dentium_all.gif" alt="">
+								</div>
+								<div class="price-total">
+									<b>39000</b> руб
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="price-item">
+								<div class="price-img">
+									<img src="images/01_dentium_all.gif" alt="">
+								</div>
+								<div class="price-total">
+									<b>39000</b> руб
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="customNavigation">
+					  <a class="btn prev">Previous</a>
+					  <a class="btn next">Next</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- price -->
+
+	<div class="price-info">
+		<div class="container">
+			<div class="price-info-text">
+				<b>Имплантационный шаблон на 1 челюсть</b> (независимо от количества имплантатов): <b>6000 руб.</b> <br> <b>При небольших операциях</b> (1,2 имплантата) <b></b>может не использоваться
+			</div>
+		</div>
+	</div>
+	<!-- price-info -->
+
+	<div class="consult_form2">
+		<div class="container">
+			<div class="col-md-7">
+				<div class="row">
+					<div class="left-block">
+						<div class="title other-title">
+							Для каждой ситуации - свой имплантат. 
+						</div>
+						<div class="small-title other-small-title">
+							Какие типы имплантатов лучше подойдут в вашем случае? 
+						</div>
+						<div class="text">
+							 <i class="ico ico-ico_phone_green"></i>
+							<div class="come">
+								 Звоните <br>
+								 подскажем:
+							</div>
+							 <span>+7(495) <b>790-70-05</b> </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="row">
+					<div class="record-right-block">
+						<div class="record-title">
+							<b>А лучше приходите</b> <br>
+							обсудим при встрече
+						</div>	
+						<a class="big_button" data-toggle="modal" data-target="#get-call">
+							<i class="ico ico-ico_button_ok"></i>запись на бесплатную консультацию
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- form -->
+
+	<div class="contacts section" id="contact">
+		<div class="container">
+			<div class="item-title">Контактная информация</div>
+			<div class="contact-name">
+				Стоматология <span class="orange">Дентал</span> <span class="green">Мир</span>
+			</div>
+			<div class="contact-wrapp">
+				<div class="contact-info clearfix">
+					<div class="col-md-4">
+						<div class="row">
+							<div class="contact-adress">
+								<i class="ico ico-big_flag"></i>
+								<span>115193, Москва, <br> ул. 6-я Кожуховская, дом 3к1</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="contact-tel">
+								<i class="ico ico-ico_phone_green"></i>
+								<span>+7(495) <b>790-70-05</b> </span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="contact-btn">
+								<a class="medium_button" data-toggle="modal" data-target="#get-call-2">
+								<i class="ico ico-phone"></i>
+								Заказать звонок</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contact-tab">
+					<div class="title">Удобно добираться от:</div>
+					<div class="tab-wrapp">
+						<ul class="nav-tabs clearfix" role="tablist">
+					    <li role="presentation" class="active">
+					    	<a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+					    		<div class="table-block">
+					    			<div class="block-vertical">
+					    				<i class="ico ico-big_metro"></i>
+					    				<span class="metro-name">
+					    					<b>Автозаводская</b> <br>
+					    					10 мин пешком
+					    				</span>
+					    			</div>
+					    		</div>
+					    	</a>
+					    </li>
+					    <li role="presentation">
+					    	<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+					    		<div class="table-block">
+					    			<div class="block-vertical">
+					    				<i class="ico ico-big_metro"></i>
+					    				<span class="metro-name">
+					    					<b>Кожуховская</b> <br>
+					    					10 мин пешком
+					    				</span>
+					    			</div>
+					    		</div>
+					    	</a>
+					    </li>
+					    <li role="presentation">
+					    	<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+					    		<div class="table-block">
+					    			<div class="block-vertical">
+					    				<i class="ico ico-big_metro"></i>
+					    				<span class="metro-name">
+					    					<b>Коломенская</b> <br>
+					    					5 мин на маршутке 232
+					    				</span>
+					    			</div>
+					    		</div>
+					    	</a>
+					    </li>
+					  </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		 <!-- Tab panes -->
+	  <div class="tab-content">
+	    <div role="tabpanel" class="tab-pane fade in active" id="home">
+	    	<div class="map-wrapp">
+	    		<img src="images/map.jpg" alt="">
+	    	</div>
+	    </div>
+	    <div role="tabpanel" class="tab-pane fade" id="profile">
+	    	Вторая карта
+	    	<div class="map-wrapp">
+	    		<img src="images/map.jpg" alt="">
+	    	</div>
+	    </div>
+	    <div role="tabpanel" class="tab-pane fade" id="messages">
+	    	Третья карта
+	    	<div class="map-wrapp">
+	    		<img src="images/map.jpg" alt="">
+	    	</div>
+	    </div>
+	  </div>
+	</div>
+	<!-- contacts -->
+
+	<div class="requisites">
+		<div class="container">
+			<div class="item-title">Реквизиты для юр.лиц</div>
+			<div class="requisites-wrapp clearfix">
+				<div class="col-md-6">
+					<div class="row">
+						<ul>
+							<li>
+								ООО <b>"Медимпорт"</b>
+							</li>
+							<li>
+								ИНН <b>7713506240</b> / КПП <b>772301001</b> / ОГРН <b>1037739842821</b>
+							</li>
+							<li>
+								Банк <b>ОАО "УРАЛСИБ"</b> г. Москва
+							</li>
+							<li>
+								Р/с <b>40702810700422001123</b>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<ul>
+							<li>
+								К/с <b>30101810100000000787</b>
+							</li>
+							<li>
+								БИК <b>044525787</b></b>
+							</li>
+							<li>
+								Лицензия: <b>№ 77-01-001768</b> от 1<b>6.01.2007</b>г. выдана Росздравнадзором по г. Москве
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- requisites -->
+
+<div class="modal fade" tabindex="-1" role="dialog" id="get-call">
+  <div class="modal-dialog get-call-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        	<span aria-hidden="true">
+        		<img src="images/close.png" alt="">
+        	</span>
+        </button>
+        <h2 class="modal-title">Заказать <br>консультацию по телефону</h2>
+      </div>
+      <div class="modal-body">
+      	<div class="form">
+      		<form action="">
+      			<div class="input-block">
+		        	<input type="text" placeholder="Введите Ваше Имя">
+		        </div>
+		        <div class="input-block">
+		        	<input type="text" class="tel-mask" placeholder="Номер телефона(маска)*">
+		        </div>
+		        <div class="input-block">
+		        	<textarea placeholder="Если требуется введите комментарий"></textarea>
+		        </div>
+		        <div class="var-link">
+							<a href="#" class="add-photo">
+								<i class="ico ico-add-photo"></i>
+								<span>Вы можете добавить фото</span>
+							</a>
+							<a href="#" class="del-photo">
+								<i class="ico ico-del-photo"></i>
+								<span>Удалить фото</span>
+							</a>
+						</div>
+						<div class="input-block">
+							<button type="submit" class="medium_button">
+								<i class="ico ico-ico_button_ok"></i>
+								<span>Заказать консультацию</span>
+							</button>
+						</div>
+      		</form>
+      	</div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" tabindex="-1" role="dialog" id="get-call-2">
+  <div class="modal-dialog get-call-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        	<span aria-hidden="true">
+        		<img src="images/close.png" alt="">
+        	</span>
+        </button>
+        <h2 class="modal-title">Заказать обратный звонок</h2>
+      </div>
+      <div class="modal-body">
+      	<div class="form">
+      		<form action="">
+      			<div class="input-block">
+		        	<input type="text" placeholder="Введите Ваше Имя">
+		        </div>
+		        <div class="input-block">
+		        	<input type="text" class="tel-mask" placeholder="Номер телефона(маска)*">
+		        </div>
+						<div class="input-block">
+							<button type="submit" class="medium_button">
+								<i class="ico ico-ico_button_ok"></i>
+								<span>Заказать звонок</span>
+							</button>
+						</div>
+      		</form>
+      	</div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 
 	<script src="js/vendor.min.js"></script>
