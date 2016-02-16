@@ -114,6 +114,15 @@ jQuery(document).ready(function($){
   });
 });
 
+$(document).ready(function() {
+  $('.big_button, .medium_button').click(function(e) {
+    e.preventDefault();
+    var newHash = $(this).attr('data-target');
+    window.location.hash = newHash;
+  });
+});
+  
+
 /*$(document).ready(function() {
   $('.nav__item-link').click(function(e) {
     e.preventDefault();
