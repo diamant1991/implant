@@ -68,3 +68,541 @@
 		padding-left: 0;
 	}
 }
+@media(min-width: 992px){
+	.small-block{
+		display: none !important;
+	}
+}
+@media(max-width: 991px){
+	.main-header .left-block{
+		width: 46%;
+	}
+	.main-header .header-form{
+		float: right;
+		width: 32%;
+	}
+	.main-header{
+		height: 215px;
+		position: relative;
+	}
+	.main-header .header-center-block{
+		float: none;
+    width: 750px;
+    left: 50%;
+    margin-left: -375px;
+    bottom: -5px;
+    position: absolute;
+    z-index: 2;
+	}
+	.telephone{
+		float: right;
+	}
+	.nav .ico{
+		display: none;
+	}
+	.nav a{
+		padding: 0 13px;
+	}
+	.preim .blocks > div{
+		display: block;
+		width: 100%;
+		position: relative;
+		left: 0;
+		top: 0;
+		padding: 10px 0;
+		padding-left: 115px;
+		text-align: left;
+	}
+	.preim .blocks{
+		display: none !important;
+	}
+	.preim .block2{
+		margin-left: 0;
+	}
+	.preim .img{
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		top: 0;
+	}
+	.opit{
+		height: auto;
+	}
+	.consult_form,
+	.consult_form2,
+	.consult_form3{
+		background: url(../images/small-forn.jpg)no-repeat 50%;
+		background-size: cover;
+		height: auto;
+		text-align: center;
+		padding: 15px 0;
+	}
+	.consult_form .phone{
+		margin: 0;
+		display: block;
+		width: 100%;
+	}
+	.consult_form .info{
+		width: 100%;
+		display: block;
+		margin: 0;
+	}
+	.team_block .edu2{
+		display: none;
+	}
+	.consult_form2 .phone .title{
+		margin: 10px 0;
+	}
+	.consult_form .info .big_button {
+    width: auto;
+    padding-left: 65px;
+    display: inline-block;
+	}
+	.owl-work .item-block{
+		padding: 0 10px;
+	}
+	.consult_form2 .phone{
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+	.consult_form3 .info{
+		display: block;
+		margin: 0;
+		width: 100%;
+	}
+	.consult_form3 .left_inf{
+		float: none;
+	}
+	.consult_form3 .info ul li{
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+	.consult_form3 .form{
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+	.consult_form3 .medium_button{
+		display: inline-block;
+		width: auto;
+		padding-left: 45px;
+		padding-right: 10px;
+	}
+	.consult_form2 .phone .text-2x{
+		width: 100%;
+	}
+	.technology-line{
+		padding-right: 0;
+	}
+	.tech-item-inner:after{
+		content: none;
+	}
+	.technology .title p{
+		width: 100%;
+	}
+	.tech-item{
+		padding-left: 10px;
+	}
+	.sent-check{
+		display: none;
+	}
+	.sentence-radio{
+		margin-bottom: 0;
+	}
+	.sentence-radio-item{
+		margin-bottom: 15px;
+	}
+	.sentence-bottom{
+		text-align: center;
+	}
+	.sentence-form .small-title{
+		margin-bottom: 15px;
+	}
+	.consult_form2 .record-right-block .big_button{
+		display: inline-block;
+		width: auto;
+	}
+	.contact-adress,
+	.contact-tel{
+		margin-bottom: 15px;
+	}
+	.nav-tabs a{
+		padding-left: 5px;
+	}
+	.nav-tabs .metro-name {
+    width: 165px;
+    margin-left: 0px;
+	}
+	.consult_form2 .right-block{
+		padding-top: 20px;
+	}
+	.consult_form2 .info{
+		width: 100%;
+		margin: 0;
+	}
+	.consult_form2 .big_button{
+		display: inline-block;
+		width: auto;
+	}
+	.item-title:after{
+		width: 100%;
+	}
+	.sentence-form .input-block{
+		padding-left: 0;
+	}
+}
+@media(min-width: 768px){
+	.visible-xs{
+		display: none !important;
+	}
+	.nav{
+		opacity: 1 !important;
+		visibility: visible !important;
+	}
+}
+@media(max-width: 767px){
+	.hidden-xs{
+		display: none !important;
+	}
+	.nav .ico{
+		display: inline-block;
+    background-image: url(../images/mobi-icon.png);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+	}
+	.icon_1{
+		width: 23px;
+    height: 20px;
+    background-position: -5px -5px;
+	}
+			.icon_2 {
+		    width: 23px;
+		    height: 17px;
+		    background-position: -5px -35px;
+		}
+
+		.icon_3 {
+		    width: 26px;
+		    height: 22px;
+		    background-position: -5px -62px;
+		}
+
+		.icon_4 {
+		    width: 31px;
+		    height: 26px;
+		    background-position: -5px -94px;
+		}
+
+		.icon_5 {
+		    width: 30px;
+		    height: 27px;
+		    background-position: -5px -130px;
+		}
+
+		.icon_6 {
+		    width: 26px;
+		    height: 25px;
+		    background-position: -5px -167px;
+		}
+
+		.icon_7 {
+		    width: 21px;
+		    height: 25px;
+		    background-position: -5px -202px;
+		}
+
+		.icon_8 {
+		    width: 17px;
+		    height: 19px;
+		    background-position: -5px -237px;
+		}
+
+		.icon_9 {
+		    width: 20px;
+		    height: 18px;
+		    background-position: -5px -266px;
+		}
+	.main-header{
+		height: auto;
+	}
+	.nav{
+		position: absolute;
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+		width: 320px;
+		left: -320px;
+		top: 0;
+		background: rgba(255,255,255,0.9);
+		z-index: 1000;
+		height: auto;
+		-webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.23);
+		-moz-box-shadow:    0px 2px 7px 0px rgba(0, 0, 0, 0.23);
+		box-shadow:         0px 2px 7px 0px rgba(0, 0, 0, 0.23);
+	}
+	.nav.active{
+		left: 0;
+		opacity: 1;
+		visibility: visible;
+	}
+	.nav li{
+		float: none;
+		border-bottom: 1px solid #d9dcd3;
+	}
+	.nav li a{
+		background: none !important;
+		font-size: 18px;
+		color: #3a6900;
+		text-transform: uppercase;
+		height: 45px;
+		line-height: 45px;
+	}
+	.preim .title{
+		font-size: 22px;
+		line-height: 1.2;
+	}
+	.preim h1{
+		font-size: 28px;
+		line-height: 1.2;
+	}
+	.preim{
+		padding: 10px;
+		min-height: inherit;
+	}
+	.small-link{
+		padding-right: 40px;
+	}
+	.consult_form .phone .title{
+		color: #fff;
+	}
+	.ico-ico_phone_black,
+	.ico-ico_phone_green{
+		display: none !important;
+	}
+	.consult_form .phone .title{
+		font-family: 'PTSansNarrow';
+		font-size: 22px;
+		text-transform: uppercase;
+	}
+	.works .h1{
+		font-size: 28px;
+		border-bottom: 0;
+		padding-bottom: 0;
+		color: #283d0f;
+	}
+	.consult_form2 .text span,
+	.consult_form2 .text b{
+		color: #fff;
+	}
+	.consult_form2 .text span{
+		font-size: 28px;
+	}
+	.consult_form2 .info .title{
+		margin-top: 10px;
+	}
+	.team{
+		padding: 10px;
+	}
+	.team .h1{
+		margin-bottom: 5px;
+	}
+	.team .h1 b{
+		display: block;
+		border-bottom: 0;
+		padding: 0;
+		font-size: 28px;
+		color: #283d0f;
+		text-transform: uppercase;
+	}
+	.team .title{
+		font-size: 18px;
+		font-weight: normal;
+	}
+	.team_block .edu1{
+		display: none;
+	}
+	.team_block .pers_inf{
+		width: 100%;
+		margin-left: 0;
+	}
+	.team_block{
+		position: relative;
+		padding-left: 180px;
+	}
+	.team_block .image{
+		position: absolute;
+		z-index: 2;
+		left: 15px;
+		top: 15px;
+	}
+	.consult_form, 
+	.consult_form2, 
+	.consult_form3{
+		padding: 15px;
+	}
+	.review{
+		padding-top: 30px;
+	}
+	.technology{
+		padding-top: 25px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.item-title,
+	.technology .title{
+		font-size: 28px;
+		color: #283d0f;
+		text-transform: uppercase;
+	}
+	.technology .title p{
+		display: none;
+	}
+	.technology .title span{
+		display: none;
+	}
+	.item-title:after{
+		content: none;
+	}
+	.tech-item-inner{
+		padding-left: 0;
+	}
+	.tech-item .number span{
+		display: none;
+	}
+	.tech-item .number{
+		top: 0;
+		left: 10px;
+	}
+	.sentence{
+		padding: 30px;
+	}
+	.sentence-wrapp .customNavigation .next{
+		right: -20px;
+	}
+	.sentence-wrapp .customNavigation .prev{
+		left: -20px;
+	}
+	.sentence-top{
+		padding: 20px;
+	}
+	.sentence-title{
+		font-family: 'PTSansNarrow';
+	}
+	.timer-text{
+		display: block;
+		margin-bottom: 10px;
+	}
+	.diploms .carousel-wrapper{
+		padding: 0 30px;
+	}
+	.customNavigation .next{
+		right: 10px;
+	}
+	.customNavigation .prev{
+		left: 10px;
+	}
+	.consult_form2 .right-block{
+		padding-top: 0;
+	}
+	.price{
+		padding-top: 0;
+	}
+	.price .item-title{
+		margin-bottom: 15px;
+	}
+	.price-title{
+		font-size: 18px;
+		font-weight: normal;
+	}
+	.contacts{
+		padding-top: 30px;
+	}
+	.nav-tabs li{
+		float: none;
+		width: 100%;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	.nav-tabs{
+		border: 0;
+	}
+	.nav-tabs a{
+		display: inline-block;
+	}
+	.nav-tabs a,
+	.nav-tabs li{
+		height: auto;
+	}
+}
+
+@media(max-width: 450px){
+	.opit_cont div{
+		width: 45%;
+	}
+	.big_button,
+	.consult_form2 .big_button{
+		font-size: 13px;
+	}
+	.consult_form .info .big_button{
+		padding-left: 45px;
+	}
+	.team_block,
+	.review-item-inner{
+		padding: 15px;
+	}
+	.team_block .image{
+		position: relative;
+		left: 0;
+		top: 0;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.consult_form3 .medium_button{
+		font-size: 15px;
+	}
+	.review-img{
+		position: relative;
+		left: 0;
+		top: 0;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.technology-line .col-xs-6{
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	.tech-item{
+		padding-left: 0;
+	}
+	.fill{
+		width: 100% !important;
+	}
+	.sentence-top{
+		height: auto;
+	}
+	.sentence-bottom{
+		padding: 15px;
+	}
+	.sentence-price .today-price,
+	.sentence-price .prev-price{
+		width: 100%;
+	}
+	.sentence-form .ico-ico_button_ok{
+		display: none;
+	}
+	.sentence-form .medium_button{
+		padding-left: 0;
+		text-align: center;
+	}
+	.price-info{
+		padding: 15px;
+	}
+}

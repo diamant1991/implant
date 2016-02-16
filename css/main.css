@@ -1911,3 +1911,115 @@ body {
   width: 460px;
   margin: 50px auto;
 }
+.small-block {
+  margin-top: 20px;
+}
+.small-block-item {
+  position: relative;
+  padding-left: 115px;
+  background: #80c828;
+  margin-bottom: 2px;
+  min-height: 110px;
+  color: #fff;
+  padding-top: 15px;
+}
+.small-block-item:nth-child(2) {
+  background: #f55f11;
+}
+.small-block-item .small-img {
+  position: absolute;
+  height: 100%;
+  left: 15px;
+  top: 15px;
+  z-index: 2;
+}
+.small-block-item .small-title {
+  font-size: 22px;
+  font-family: 'PTSansNarrowBold';
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.small-block-item .text {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.2;
+}
+.small-link {
+  text-align: right;
+  padding-top: 15px;
+}
+.small-link > div {
+  margin-bottom: 5px;
+}
+.small-link a {
+  position: relative;
+  display: inline-block;
+  font-family: 'PT Sans', sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #3a6900;
+}
+.small-link a span {
+  text-decoration: underline;
+}
+.mobile-header {
+  height: 55px;
+  background-color: #7fc727;
+  -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.23);
+  padding-left: 55px;
+  padding-top: 13px;
+}
+.mobile-header img {
+  max-width: 100%;
+  height: auto;
+}
+.menu-toggle {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background: none;
+  position: absolute;
+  z-index: 2;
+  left: 15px;
+  top: 16px;
+  z-index: 10000;
+}
+.mobile-title {
+  color: #fff;
+  font-size: 22px;
+  font-family: 'PTSansNarrow';
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+.mobile-title b {
+  font-family: 'PTSansNarrowBold';
+}
+.mobile-title .number {
+  font-size: 28px;
+}
+.mobile-title .text-mobile {
+  text-transform: none;
+  font-size: 24px;
+}
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+.mobile-nav-header {
+  height: 55px;
+  background: rgba(114, 194, 17, 0.9);
+  padding-left: 70px;
+}
+.close-menu {
+  border: 0;
+  outline: 0;
+  color: #fff;
+  background: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: 'PTSansNarrowBold';
+  cursor: pointer;
+  padding-top: 13px;
+}

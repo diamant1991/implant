@@ -11,7 +11,7 @@ $(document).ready(function() {
       itemsDesktop : [1500,4],
       itemsDesktopSmall : [1200,3],
       itemsTablet: false, 
-      itemsMobile : [400,2]
+      itemsMobile : [600,2]
   });
 
   sentence.owlCarousel({
@@ -22,14 +22,14 @@ $(document).ready(function() {
       itemsDesktop : [1500,6],
       itemsDesktopSmall : [1200,5],
       itemsTablet: [991,4], 
-      itemsMobile : [400,3]
+      itemsMobile : [600,3]
   });
   price.owlCarousel({
       items : 7, 
       itemsDesktop : [1500,6],
       itemsDesktopSmall : [1200,5],
       itemsTablet: [991,4], 
-      itemsMobile : [400,3]
+      itemsMobile : [767,3]
   });
   
   $("#next-sen").click(function(){
@@ -156,3 +156,14 @@ jQuery(document).ready(function($){
   });
 }*/
 
+$(function() {
+  $('.menu-toggle').click(function(e) {
+    if(!$('.nav').hasClass('active'))
+      $('.nav').addClass('active');
+  });
+  $('.close-menu').click(function(e) {
+    e.preventDefault();
+    if($('.nav').hasClass('active'))
+      $('.nav').removeClass('active');
+  });
+});

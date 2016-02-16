@@ -16,7 +16,7 @@
 <body>
 	<header class="main-header section" id="header">
 		<div class="container clearfix">
-			<div class="left-block">
+			<div class="left-block hidden-xs">
 				<div class="logo">
 					<a href="#">
 						<img src="images/logo.png" height="74" width="292" alt="">
@@ -26,7 +26,7 @@
 					Москва, 6-я Кожуховская д. 3 к.1
 				</div>
 			</div>
-			<div class="header-center-block">
+			<div class="header-center-block hidden-xs">
 				<div class="telephone clearfix">
 					<div class="text hidden">Для консультации <br> по телефону, звоните:</div>
 					<div class="info">
@@ -51,7 +51,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="header-form">
+			<div class="header-form hidden-xs">
 				<form action="">
 					<div class="input-block">
 						<input type="text" placeholder="Введите Ваше Имя">
@@ -64,12 +64,27 @@
 					</div>
 				</form>
 			</div>
+			<div class="mobile-header visible-xs">
+				<button class="menu-toggle">
+					<img src="images/menu-btn.png" alt="">
+				</button>
+				<div class="mobile-logo">
+					<a href="#">
+						<img src="images/mobile-logo.png" alt="">
+					</a>
+				</div>
+			</div>
 		</div>
 	</header>
 	<!-- header -->
 
 	<nav class="nav">
 		<div class="container">
+			<div class="mobile-nav-header visible-xs">
+				<button class="close-menu">
+					Меню
+				</button>
+			</div>
 			<ul class="nav-menu clearfix">
 				<li class="nav__item">
 					<a href="#header" class="nav__item-link">
@@ -177,6 +192,59 @@
 						 имплантата. Погрешность 0%
 					</div>
 	 				<a href="#otzivi" class="link roll">Отзывы про нас</a>
+				</div>
+			</div>
+			<div class="small-block">
+				<div class="small-block-item">
+					<div class="small-img">
+						<img src="images/small-img-2.png" alt="">
+					</div>
+					<div class="small-desc">
+						<div class="small-title">
+							С ювелирной точностью
+						</div>
+						<div class="text">
+							Контроль угла и глубина установки имплантанта. Погрешность 0%
+						</div>
+					</div>
+				</div>
+				<div class="small-block-item">
+					<div class="small-img">
+						<img src="images/small-img-3.png" alt="">
+					</div>
+					<div class="small-desc">
+						<div class="small-title">
+							Максимально быстро
+						</div>
+						<div class="text">
+							1 имплантат за 10 минут  до 14 имплантатов за 1 операцию
+						</div>
+					</div>
+				</div>
+				<div class="small-block-item">
+					<div class="small-img">
+						<img src="images/small-img-1.png" alt="">
+					</div>
+					<div class="small-desc">
+						<div class="small-title">
+							Безопасные и безболезненные технологии
+						</div>
+						<div class="text">
+							3D планирование операции. Контроль всех манипуляций в процессе установки
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="small-link">
+				<div>
+					<a href="#">
+						<span>А за счет чего?</span>
+					</a>
+				</div>				
+				<div>
+					<a href="#">
+						<span>Прочитать отзывы про нас</span>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -452,16 +520,19 @@
 	<div class="consult_form2">
 		<div class="container">
 			<div class="phone">
-				<div class="title">
+				<div class="mobile-title visible-xs">
+					Вам понравилось? Вам интересно что мы предложим? Приходите, обсудим
+				</div>
+				<div class="title hidden-xs">
 					 Вам понравилось? <br>
 					 Вам интересно что мы предложим?
 				</div>
 				<div class="text">
 					 <i class="ico ico-ico_phone_green"></i>
-					<div class="come">
-						 Приходите, обсудим, <br>
-						 телефон:
-					</div>
+						<div class="come hidden-xs">
+							 Приходите, обсудим, <br>
+							 телефон:
+						</div>
 					 <span>+7(495) <b>790-70-05</b> </span>
 				</div>
 			</div>
@@ -723,11 +794,16 @@
 		<div class="container">
 			<div class="left_inf">
 			<div class="info">
-				<div class="title">
+				<div class="mobile-title visible-xs">
+					<b>Мы можем удаленно составить для вас предварительный план лечения</b> Звоните: <span class="number">
+						+7(495) <b>790-70-05</b>
+					</span> <span class="text-mobile">Или оставьте заявку</span>
+				</div>
+				<div class="title hidden-xs">
 					 В подготовке плана лечения по имплантации принимают <br>
 					 участие врачи разных специализаций:
 				</div>
-				<ul>
+				<ul class="hidden-xs">
 					<li>
 						<i class="ico ico-doctor"></i>
 						<span>Ортопед</span>
@@ -745,13 +821,13 @@
 						<span>Ортодонт</span>
 					</li>
 				</ul>
-				<div class="text">
+				<div class="text hidden-xs">
 					 Любая ситуация изучается с разных точек зрения.<br>
 					 Мы можем удаленно составить для вас <br>
 					 предварительный план лечения за 4 часа.
 				</div>
 			</div>
-			<div class="phone">
+			<div class="phone hidden-xs">
 				<div class="text">
  					<i class="ico ico-ico_phone_black"></i>
 					<div class="come">
@@ -908,22 +984,26 @@
 	<div class="consult_form2">
 		<div class="container">
 			<div class="phone">
-				<div class="title title-2x">
+				<div class="mobile-title visible-xs">
+					<b>Лучше 1 раз увидеть, чем 100 раз услышать. Приглашаем в гости</b> Звоните: <span class="number">
+						+7(495) <b>790-70-05</b></span> Или оставьте заявку на презентацию в клинике:
+				</div>
+				<div class="title title-2x hidden-xs">
 					Лучше 1 раз увидеть, чем 100 раз услышать.
 				</div>
-				<div class="text text-2x">
+				<div class="text text-2x hidden-xs">
 					 <i class="ico ico-ico_phone_green"></i>
 					<div class="come come-2x">
 						Звоните:
 					</div>
 					 <span>+7(495) <b>790-70-05</b> </span>
 				</div>
-				<div class="after-text">
+				<div class="after-text hidden-xs">
 					П.С. Покажем больше отзывов и примеров работ
 				</div>
 			</div>
 			<div class="info">
-				<div class="title">
+				<div class="title hidden-xs">
 					 Или оставьте заявку на презентацию <br>в клинике:
 				</div>
 	 			<a data-title="Обсудить варианты лечения" class="big_button fancybox" data-toggle="modal" data-target="#get-call"><i class="ico ico-ico_button_ok"></i>Да, я хочу обсудить свою презентацию</a>
@@ -944,7 +1024,7 @@
 			</div>
 			<div class="technology-wrapp">
 				<div class="technology-line clearfix">
-					<div class="col-md-6">
+					<div class="col-xs-6">
 						<div class="row">
 							<div class="tech-item">
 								<div class="tech-item-inner">
@@ -961,7 +1041,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-xs-6">
 						<div class="row">
 							<div class="tech-item">
 								<div class="tech-item-inner">
@@ -980,7 +1060,7 @@
 					</div>
 				</div>
 				<div class="technology-line clearfix">
-					<div class="col-md-6">
+					<div class="col-xs-6">
 						<div class="row">
 							<div class="tech-item">
 								<div class="tech-item-inner">
@@ -998,7 +1078,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-xs-6">
 						<div class="row">
 							<div class="tech-item">
 								<div class="tech-item-inner">
@@ -1017,7 +1097,7 @@
 					</div>
 				</div>
 				<div class="technology-line clearfix">
-					<div class="col-md-6">
+					<div class="col-xs-6">
 						<div class="row">
 							<div class="tech-item">
 								<div class="tech-item-inner">
@@ -1035,7 +1115,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-xs-6">
 						<div class="row">
 							<div class="tech-item">
 								<div class="tech-item-inner">
@@ -1062,7 +1142,12 @@
 		<div class="container">
 			<div class="col-md-7">
 				<div class="row">
-					<div class="left-block">
+					<div class="mobile-title visible-xs">
+						<b>Остались вопросы? Мы с удовольсвтием ответим</b> Звоните: <span class="number">
+							+7(495) <b>790-70-05</b></span> 
+							Или заполните заявку на получение информации
+					</div>
+					<div class="left-block hidden-xs">
 						<div class="title">
 							Остались вопросы? Мы с удовольствием ответим.
 						</div>
@@ -1086,9 +1171,12 @@
 						<a data-title="Обсудить варианты лечения" class="big_button fill fancybox" data-toggle="modal" data-target="#get-call-2">
 							<i class="ico ico-ico_button_ok"></i>Заполнить заявку
 						</a>
-							<div class="title">
+							<div class="title hidden-xs">
 								*При заполнении заявки, <br>составим план лечения в качестве бонуса
 							</div>	
+							<div class="mobile-title visible-xs">
+								 *При заполнении заявки, составим план лечения в качестве бонуса
+							</div>
 					</div>
 				</div>
 			</div>
@@ -1123,7 +1211,7 @@
 								<div class="sentence-title">
 									Имплантаты <span>BioHorizons</span>
 								</div>
-								<div class="small-sentence-title">
+								<div class="small-sentence-title hidden-xs">
 									Современная имплантационная система почти даром.
 								</div>
 								<div class="sentence-price">
@@ -1152,7 +1240,11 @@
 								</div>
 							</div>
 							<div class="sentence-bottom">
-								<div class="sentence-contact clearfix">
+								<div class="mobile-title visible-xs">
+									<b>Предложение интересно?</b>
+									Заполните форму для получения подробной информации
+								</div>
+								<div class="sentence-contact hidden-xs clearfix">
 									<div class="col-md-4">
 										<div class="row">
 											<div class="title">
@@ -1160,7 +1252,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-3">
+									<div class="col-md-3 col-sm-6">
 										<div class="row">
 											<div class="info">
 												<i class="ico ico-ico_phone_white"></i>
@@ -1168,7 +1260,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-5">
+									<div class="col-md-5 col-sm-6">
 										<div class="row">
 											<div class="sent-tel">
 												<span>+7(495)</span> 790-70-05 
@@ -1178,7 +1270,7 @@
 								</div>
 								<div class="sentence-form clearfix">
 									<form action="">
-										<div class="col-md-3">
+										<div class="col-md-3 hidden-xs">
 											<div class="row">
 												<div class="small-title">
 													Заполните форму для получения <br> подробной информации
@@ -1232,7 +1324,7 @@
 								<div class="sentence-title">
 									Имплантаты <span>BioHorizons</span>
 								</div>
-								<div class="small-sentence-title">
+								<div class="small-sentence-title hidden-xs">
 									Современная имплантационная система почти даром.
 								</div>
 								<div class="sentence-price">
@@ -1261,7 +1353,11 @@
 								</div>
 							</div>
 							<div class="sentence-bottom">
-								<div class="sentence-contact clearfix">
+								<div class="mobile-title visible-xs">
+									<b>Предложение интересно?</b>
+									Заполните форму для получения подробной информации
+								</div>
+								<div class="sentence-contact hidden-xs clearfix">
 									<div class="col-md-4">
 										<div class="row">
 											<div class="title">
@@ -1269,7 +1365,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-3">
+									<div class="col-md-3 col-sm-6">
 										<div class="row">
 											<div class="info">
 												<i class="ico ico-ico_phone_white"></i>
@@ -1277,7 +1373,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-5">
+									<div class="col-md-5 col-sm-6">
 										<div class="row">
 											<div class="sent-tel">
 												<span>+7(495)</span> 790-70-05 
@@ -1287,7 +1383,7 @@
 								</div>
 								<div class="sentence-form clearfix">
 									<form action="">
-										<div class="col-md-3">
+										<div class="col-md-3 hidden-xs">
 											<div class="row">
 												<div class="small-title">
 													Заполните форму для получения <br> подробной информации
@@ -1462,7 +1558,10 @@
 		<div class="container">
 			<div class="col-md-7">
 				<div class="row">
-					<div class="left-block">
+					<div class="mobile-title visible-xs">
+						Оставьте заявку на бесплатную <b>консультацию. Гарантируем, вы узнаете что-то новое для себя</b>
+					</div>
+					<div class="left-block hidden-xs">
 						<div class="title">
 							Оставьте заявку на консультацию.
 						</div>
@@ -1722,7 +1821,14 @@
 		<div class="container">
 			<div class="col-md-7">
 				<div class="row">
-					<div class="left-block">
+					<div class="mobile-title visible-xs">
+						Для каждой ситуации - свой имплантат. 
+					  <b>	Какие типы имплантатов лучше подойдут
+						в вашем случае? </b>Звоните, подскажем:
+						тел:<span class="number"> +7(495) <b>790-70-05</b> </span>
+						<b>А лучше приходите, обсудим при встрече.</b>
+					</div>
+					<div class="left-block hidden-xs">
 						<div class="title other-title">
 							Для каждой ситуации - свой имплантат. 
 						</div>
@@ -1743,7 +1849,7 @@
 			<div class="col-md-5">
 				<div class="row">
 					<div class="record-right-block">
-						<div class="record-title">
+						<div class="record-title hidden-xs">
 							<b>А лучше приходите</b> <br>
 							обсудим при встрече
 						</div>	
