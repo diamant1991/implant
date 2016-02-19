@@ -1,11 +1,18 @@
 @media(min-width: 1500px){
 	.works .container,
 	.diploms .container,
-	.price .container {
+	.price .container,
+	.nav .container {
     width: 1500px;
+	}
+	.main-header .container{
+		width: 1424px;
 	}
 	.item-block{
 		padding: 0 16px;
+	}
+	.nav a{
+		padding: 0 33px;
 	}
 }
 @media(max-width: 1199px){
