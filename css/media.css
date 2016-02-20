@@ -22,6 +22,19 @@
 	.main-header .left-block{
 		width: 35%;
 	}
+	.nav-tabs li{
+		width: 50%;
+	}
+	.review-dialog,
+	.personal-dialog{
+		width: 90%;
+		margin-left: auto;
+		margin-top: auto;
+		position: relative;
+		margin: 60px auto;
+		left: 0;
+		top: 0;
+	}
 	.main-header .header-center-block{
 		width: 40%;
 	}

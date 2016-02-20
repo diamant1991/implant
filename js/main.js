@@ -1,23 +1,54 @@
-
+ var owl;
 $(document).ready(function() {
- 
-  var owl = $(".owl-work"),
+
+  var swiper = new Swiper('.swiper1', {
+    pagination: '.swiper-pagination',
+    slidesPerView: "auto",
+    spaceBetween: 45,
+   nextButton: '.next-swiper',
+    prevButton: '.prev-swiper'
+  });
+  var swiper2 = new Swiper('.swiper2', {
+    pagination: '.swiper-pagination',
+    slidesPerView: "auto",
+    spaceBetween: 45,
+    nextButton: '.next-swiper',
+    prevButton: '.prev-swiper'
+  });
+
+  swiper2.params.control = swiper;
+  swiper.params.control = swiper2;
+
+  function customPager() {
+
+    $.each(this.owl.userItems, function (i) {
+
+      var titleData = $(this).attr('data-text');
+      var paginationLinks = $('#sentence-demo .owl-controls .owl-page span');
+
+    $(paginationLinks[i]).append(titleData);
+
+    });
+}
+ var owl2 = $(".owl-work"),
       sentence = $('#sentence-demo'),
       diploms = $('.owl-diplom'),
       price = $('.owl-price');
  
-  owl.owlCarousel({
+  owl2.owlCarousel({
       items : 5, 
       itemsDesktop : [1500,4],
       itemsDesktopSmall : [1200,3],
       itemsTablet: false, 
       itemsMobile : [600,2]
   });
-
   sentence.owlCarousel({
-     singleItem: true
+     singleItem: true,
+     afterInit: customPager,
+     afterUpdate: customPager
   });
-  diploms.owlCarousel({
+
+    diploms.owlCarousel({
       items : 8, 
       itemsDesktop : [1500,6],
       itemsDesktopSmall : [1200,5],
@@ -105,8 +136,15 @@ jQuery(document).ready(function($){
     titleSeconds: 'секунд',
     titleDays: 'дней'
   });
-  $('.second-countdown').dsCountDown({
+  $('.countdown2').dsCountDown({
     endDate: new Date("March 25, 2016 22:57:30"),
+    titleHours: 'часов', 
+    titleMinutes: 'минут', 
+    titleSeconds: 'секунд',
+    titleDays: 'дней'
+  });
+  $('.countdown3').dsCountDown({
+    endDate: new Date("May 10, 2016 22:57:30"),
     titleHours: 'часов', 
     titleMinutes: 'минут', 
     titleSeconds: 'секунд',
@@ -262,4 +300,14 @@ $("#clbh_phone_div").drags().hover(function(){
     $(this).removeClass("cbh-static").addClass("cbh-hover");
 },function(){
     $(this).removeClass("cbh-hover").addClass("cbh-static");
+})
+
+$(".swiper1 .swiper-slide a,.swiper2 .swiper-slide a").hover(function(){
+  var index = $(this).parent().index();
+  $(".swiper1 .swiper-wrapper .swiper-slide:eq("+index+") a,.swiper2 .swiper-wrapper .swiper-slide:eq("+index+") a").addClass("hover");
+  },
+function(){
+  var index = $(this).parent().index();
+  $(".swiper1 .swiper-wrapper .swiper-slide:eq("+index+") a,.swiper2 .swiper-wrapper .swiper-slide:eq("+index+") a").removeClass("hover");
+
 })
