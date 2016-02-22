@@ -6,7 +6,6 @@ body {
   height: 155px;
 }
 .main-header .left-block {
-  padding-left: 25px;
   float: left;
   width: 30%;
   padding-top: 16px;
@@ -1847,6 +1846,7 @@ body {
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
   outline: 0;
+  padding-right: 0 !important;
 }
 .modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform 0.3s ease-out;
@@ -1967,15 +1967,14 @@ body {
   left: 50%;
   margin-left: -230px;
   top: 50%;
-  margin-top: -223px;
-  /* margin: 50px auto; */
+  margin-top: -230px;
 }
 .review-dialog {
   width: 1190px;
   left: 50%;
   margin-left: -595px;
   top: 50%;
-  margin-top: -223px;
+  margin-top: -305px;
 }
 .review-dialog .modal-content {
   padding-bottom: 60px;
@@ -2181,13 +2180,17 @@ body {
   padding-left: 40px;
 }
 .otzivi-wrapp {
-  height: 200px;
+  height: 500px;
 }
 .back-button.medium_button {
   background-position: bottom;
 }
 .personal-dialog .medium_button {
   padding-left: 40px;
+}
+.personal-dialog .zapis {
+  padding-left: 55px;
+  margin-left: 30px;
 }
 .ico-back {
   width: 22px;
@@ -2437,7 +2440,7 @@ body {
   margin-bottom: 35px;
 }
 .close__button-link {
-  display: block;
+  display: inline-block;
   width: 145px;
   height: 40px;
   margin: auto;

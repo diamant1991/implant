@@ -1,18 +1,21 @@
 @media(min-width: 1500px){
 	.works .container,
 	.diploms .container,
-	.price .container,
-	.nav .container {
+	.price .container {
     width: 1500px;
 	}
-	.main-header .container{
+	.main-header .container,
+	.nav .container{
 		width: 1424px;
 	}
 	.item-block{
 		padding: 0 16px;
 	}
+	.nav-menu{
+		padding: 0 5px;
+	}
 	.nav a{
-		padding: 0 33px;
+		padding: 0 28px;
 	}
 }
 @media(max-width: 1199px){
@@ -26,8 +29,9 @@
 		width: 50%;
 	}
 	.review-dialog,
-	.personal-dialog{
-		width: 90%;
+	.personal-dialog,
+	.get-call-dialog{
+		width: 95%;
 		margin-left: auto;
 		margin-top: auto;
 		position: relative;
@@ -288,6 +292,36 @@
 	.hidden-xs{
 		display: none !important;
 	}
+	.sentence-radio-item{
+		margin: 0 5px;
+		margin-bottom: 10px;
+		text-align: left;
+		padding-left: 35px;
+	}
+	.ds-white .ds-element-title{
+		font-size: 8px;
+	}
+	.ds-white .ds-element-value{
+		font-size: 22px;
+	}
+	#sentence-demo .owl-pagination{
+		display: none;
+	}
+	.ds-white .ds-element{
+		width: 40px;
+		height: 50px;
+	}
+	.sentence-title{
+		font-size: 30px;
+	}
+	.sentence-price .prev-price{
+		width: 100px;
+		font-size: 18px;
+	}
+	.sentence-price .today-price{
+		width: 100px;
+		font-size: 18px;
+	}
 	.nav .ico{
 		display: inline-block;
     background-image: url(../images/mobi-icon.png);
@@ -509,7 +543,7 @@
 		left: -20px;
 	}
 	.sentence-top{
-		padding: 20px;
+		padding: 5px;
 	}
 	.sentence-title{
 		font-family: 'PTSansNarrow';
@@ -546,7 +580,7 @@
 	.nav-tabs li{
 		float: none;
 		width: 100%;
-		margin-bottom: 15px;
+		height: 70px;
 		text-align: center;
 	}
 	.nav-tabs{
@@ -557,13 +591,23 @@
 	}
 	.nav-tabs a,
 	.nav-tabs li{
-		height: auto;
+		height: 80px;
+	}
+	.consult_form .phone{
+		line-height: 1;
 	}
 }
 
 @media(max-width: 450px){
 	.opit_cont div{
 		width: 45%;
+		padding: 0 20px;
+	}
+	.otzivi .info{
+		margin-left: 0;
+	}
+	.otzivi .image{
+		display: none;
 	}
 	.big_button,
 	.consult_form2 .big_button{
@@ -605,15 +649,11 @@
 	.fill{
 		width: 100% !important;
 	}
-	.sentence-top{
+	/* .sentence-top{
 		height: auto;
-	}
+	} */
 	.sentence-bottom{
 		padding: 15px;
-	}
-	.sentence-price .today-price,
-	.sentence-price .prev-price{
-		width: 100%;
 	}
 	.sentence-form .ico-ico_button_ok{
 		display: none;
