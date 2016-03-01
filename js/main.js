@@ -40,7 +40,7 @@ $(document).ready(function() {
       itemsDesktop : [1500,4],
       itemsDesktopSmall : [1200,3],
       itemsTablet: false, 
-      itemsMobile : [600,2]
+      itemsMobile : [330,2]
   });
   sentence.owlCarousel({
      singleItem: true,
@@ -311,3 +311,12 @@ function(){
   $(".swiper1 .swiper-wrapper .swiper-slide:eq("+index+") a,.swiper2 .swiper-wrapper .swiper-slide:eq("+index+") a").removeClass("hover");
 
 })
+
+
+$(function() {
+  $('.open__modal').click(function(e) {
+    var dataSlide = $(this).attr('data-slide');
+    $('.item__slide').removeClass('active');
+    $(".item__slide[data-slide = " + dataSlide + "]").addClass('active');
+  });
+});

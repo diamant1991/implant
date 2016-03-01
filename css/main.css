@@ -354,6 +354,7 @@ body {
   font-family: 'PTSansNarrowBold';
   text-align: center;
   margin: 25px 0;
+  padding: 0 50px;
 }
 .opit .descr {
   opacity: 0;
