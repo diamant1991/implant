@@ -2087,6 +2087,7 @@ body {
 .item img {
   max-width: 100%;
   height: auto;
+  max-height: 170px;
 }
 .mobile-nav-header {
   height: 55px;
@@ -2749,4 +2750,19 @@ body {
     -o-background-size: 24px 24px;
     background-size: 24px 24px;
   }
+}
+.complete__text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+}
+.complete__text p {
+  margin-bottom: 20px;
+}
+.modal-dialog .complete__text .medium_button {
+  display: block;
+  width: 120px;
+  padding: 0;
+  margin: auto;
 }
