@@ -1144,6 +1144,9 @@ body {
   padding-top: 10px;
   text-align: center;
 }
+.item-title.second:after {
+  content: none;
+}
 .item-title:after {
   content: "";
   display: block;
@@ -2765,4 +2768,35 @@ body {
   width: 120px;
   padding: 0;
   margin: auto;
+}
+.contact__btn-item {
+  display: block;
+  float: left;
+  width: 33.3%;
+  border: 1px solid #000;
+  border-right: 0;
+  padding: 10px 30px;
+}
+.contact__btn-item:last-child {
+  border-right: 1px solid #000;
+}
+.contact__btn-icon {
+  float: left;
+  width: 50%;
+  padding-right: 10px;
+}
+.contact__btn-icon img {
+  max-width: 100%;
+  height: auto;
+}
+.contact__btn-text {
+  float: left;
+  width: 50%;
+  font-family: 'PTSansNarrowBold';
+  color: #000;
+  font-size: 32px;
+  line-height: 3.5;
+}
+.contact__btn {
+  margin-bottom: 100px;
 }

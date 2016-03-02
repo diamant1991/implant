@@ -90,15 +90,15 @@ $(document).ready(function(){
   });
   $(document).scroll(function(){
     var offsets = [];
-    $('.nav a').each(function(index, element){
+    $('.nav__item-link').each(function(index, element){
       offsets.push($("#" + $(element).data('scroll')).offset().top);
     });
     offsets.push($(document).height());
     var docScroll = $(document).scrollTop() + headerHeight + $(window).height() / 2;
     for (var i = 0; i < offsets.length - 1; i++) {
       if (docScroll >= offsets[i] && docScroll < offsets[i+1]) {
-        $('.active').removeClass('active');
-        $('.nav a').eq(i).addClass('active');
+        $('.nav__item-link.active').removeClass('active');
+        $('.nav__item-link').eq(i).addClass('active');
         break;
       };
     };
@@ -337,26 +337,22 @@ $(function() {
 });
 
 
+$(function() {
+  var $menu = $(".nav");
+  $(window).scroll(function(){
+    if ( $(this).scrollTop() > 150 ){
+      $menu.addClass("fixed");
+    }
+    else{
+      $menu.removeClass("fixed");
+    }
+  });
+});
 
-function hideShowNav(){
+/*function hideShowNav(){
   function navHidden(){
     $(".nav").hide();
   }
-
-  $(function() {
-    var $menu = $(".nav");
-    $(window).scroll(function(){
-      if ( $(this).scrollTop() > 150 ){
-        $menu.addClass("fixed");
-        setTimeout(navHidden, 4000)
-      }
-      else{
-        $menu.removeClass("fixed");
-        clearTimeout(setTimeout(navHidden, 4000));
-        $(".nav").show();
-      }
-    });
-  });
 
   addEventListener("scroll",  function()  {
     clearTimeout(setTimeout(navHidden, 4000));
@@ -390,4 +386,4 @@ function hideShowNav(){
   init()
 }
 
-hideShowNav()
+hideShowNav()*/

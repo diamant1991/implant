@@ -104,6 +104,9 @@
 	.main-header .left-block{
 		width: 46%;
 	}
+	.contact__btn-text{
+		font-size: 22px;
+	}
 	.main-header .header-form{
 		float: right;
 		width: 32%;
@@ -626,6 +629,17 @@
 		font-size: 22px;
 		padding: 15px;
 		line-height: 1.2;
+	}
+	.contact__btn-item{
+		width: 100%;
+		border-right: 1px solid #000;
+		height: 140px;
+	}
+	.contact__btn{
+		margin-bottom: 50px;
+	}
+	.contact__btn-text{
+		line-height: 120px;
 	}
 }
 @media(max-width: 450px){
