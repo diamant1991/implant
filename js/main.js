@@ -349,18 +349,17 @@ function hideShowNav(){
       if ( $(this).scrollTop() > 150 ){
         $menu.addClass("fixed");
         setTimeout(navHidden, 4000)
-        } 
+      }
       else{
         $menu.removeClass("fixed");
-        if($(".nav").is(':hidden')){
-          $(".nav").show();
-        }
-        
+        clearTimeout(setTimeout(navHidden, 4000));
+        $(".nav").show();
       }
     });
   });
 
   addEventListener("scroll",  function()  {
+    clearTimeout(setTimeout(navHidden, 4000));
     $(".nav").show() 
   });
 
@@ -382,6 +381,7 @@ function hideShowNav(){
     }
     
     if(mouse_y < 150){
+      clearTimeout(navHidden)
       if($('.nav').is(':hidden')){
         $('.nav').show();
       }

@@ -1691,11 +1691,11 @@ body {
   vertical-align: middle;
 }
 .contact-btn .medium_button {
-  width: 235px;
+  width: 305px;
   text-align: center;
   font-family: 'PTSansNarrowBold';
   font-size: 22px;
-  padding-left: 30px;
+  padding-left: 15px;
 }
 .contact-btn i {
   left: 17px;
