@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="" >
 	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,600,600italic,700' rel='stylesheet' type='text/css'>
@@ -14,6 +15,7 @@
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+	<div class="swiper-area"></div>
 	<header class="main-header section" id="header">
 		<div class="container clearfix">
 			<div class="left-block hidden-xs">
@@ -78,9 +80,81 @@
 	</header>
 	<!-- header -->
 
-	<nav class="nav">
+	<nav class="nav desktop-nav hidden-xs">
 		<div class="container">
 			<div class="mobile-nav-header visible-xs">
+				<button class="menu-toggle">
+					<img src="images/menu-btn.png" alt="">
+				</button>
+				<button class="close-menu">
+					Меню
+				</button>
+			</div>
+			<ul class="nav-menu clearfix">
+				<li class="nav__item">
+					<a href="" class="nav__item-link active" data-scroll="header">
+						<i class="ico icon_1"></i>
+						<span>главная</span>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="" class="nav__item-link" data-scroll="works">
+						<i class="ico icon_2"></i>
+						<span>фото работ</span>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="" class="nav__item-link" data-scroll="team">
+						<i class="ico icon_3"></i>
+						<span>врачи</span>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="" class="nav__item-link" data-scroll="review">
+						<i class="ico icon_4"></i>
+						<span>отзывы</span>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="" class="nav__item-link" data-scroll="tech">
+						<i class="ico icon_5"></i>
+						<span>технологии</span>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="" class="nav__item-link" data-scroll="action">
+						<i class="ico icon_6"></i>
+						<span>акции</span>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="" class="nav__item-link" data-scroll="sert">
+						<i class="ico icon_7"></i>
+						<span>сертификаты</span>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="" class="nav__item-link" data-scroll="price">
+						<i class="ico icon_8"></i>
+						<span>цены</span>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="" class="nav__item-link" data-scroll="contact">
+						<i class="ico icon_9"></i>
+						<span>контакты</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- nav -->
+	<nav class="nav mobile-nav visible-xs">
+		<div class="container">
+			<div class="mobile-nav-header visible-xs">
+				<button class="menu-toggle">
+					<img src="images/menu-btn.png" alt="">
+				</button>
 				<button class="close-menu">
 					Меню
 				</button>
@@ -790,7 +864,7 @@
 			<div class="left_inf">
 			<div class="info">
 				<div class="mobile-title visible-xs">
-					<b>Мы можем удаленно составить для вас предварительный план лечения</b> Звоните: <span class="number">
+					<b>Мы можем удаленно составить <br> для вас предварительный план <br> лечения</b> Звоните: <span class="number">
 						+7(495) <b>790-70-05</b>
 					</span> <span class="text-mobile">Или оставьте заявку</span>
 				</div>
@@ -859,8 +933,10 @@
 				</div>
 				<div class="input-block">
 					<button type="submit" class="medium_button">
-						<i class="ico ico-ico_button_phone"></i> 
-						<span>Получить план лечения за 4 ч.</span>
+						<span>
+							<i class="ico ico-ico_button_phone"></i> 
+							Получить план лечения за 4 ч.
+						</span>
 					</button>
 				</div>
 			</form>
@@ -980,8 +1056,9 @@
 		<div class="container">
 			<div class="phone">
 				<div class="mobile-title visible-xs">
-					<b>Лучше 1 раз увидеть, чем 100 раз услышать. Приглашаем в гости</b> Звоните: <span class="number">
-						+7(495) <b>790-70-05</b></span> Или оставьте заявку на презентацию в клинике:
+					<b>Лучше 1 раз увидеть, чем 100 раз услышать. <br>Приглашаем в гости</b> <br> 
+					 <p class="black">	Звоните: <span class="number">+7(495) <b>790-70-05</b></span> </p>
+						Или оставьте заявку на презентацию в клинике:
 				</div>
 				<div class="title title-2x hidden-xs">
 					Лучше 1 раз увидеть, чем 100 раз услышать.
@@ -1278,9 +1355,9 @@
 			<div class="col-md-7">
 				<div class="row">
 					<div class="mobile-title visible-xs">
-						<b>Остались вопросы? Мы с удовольсвтием ответим</b> Звоните: <span class="number">
-							+7(495) <b>790-70-05</b></span> 
-							Или заполните заявку на получение информации
+						<b>Остались вопросы? <br>Мы с удовольсвтием ответим</b><br> 
+						<p class="black">	Звоните: <span class="number">+7(495) <b>790-70-05</b></span> </p>
+							Или заполните заявку <br> на получение информации
 					</div>
 					<div class="left-block hidden-xs">
 						<div class="title">
@@ -1304,13 +1381,14 @@
 				<div class="row">
 					<div class="right-block">
 						<a data-title="Обсудить варианты лечения" class="big_button fill fancybox" data-toggle="modal" data-target="#feedback">
-							<i class="ico ico-ico_button_ok"></i>Заполнить заявку
+							<i class="ico ico-ico_button_ok"></i>
+							<span>Заполнить заявку</span>
 						</a>
 							<div class="title hidden-xs">
 								*При заполнении заявки, <br>составим план лечения в качестве бонуса
 							</div>	
 							<div class="mobile-title visible-xs">
-								 *При заполнении заявки, составим план лечения в качестве бонуса
+								 *При заполнении заявки, составим план <br> лечения в качестве бонуса
 							</div>
 					</div>
 				</div>
@@ -2077,10 +2155,12 @@
 			<div class="col-md-7">
 				<div class="row">
 					<div class="mobile-title visible-xs">
-						Для каждой ситуации - свой имплантат. 
-					  <b>	Какие типы имплантатов лучше подойдут
+						Для каждой ситуации - свой имплантат. <br>
+					  <b>	Какие типы имплантатов лучше подойдут <br>
 						в вашем случае? </b>Звоните, подскажем:
-						тел:<span class="number"> +7(495) <b>790-70-05</b> </span>
+						<p class="black">
+							тел:<span class="number"> +7(495) <b>790-70-05</b> </span>
+						</p>
 						<b>А лучше приходите, обсудим при встрече.</b>
 					</div>
 					<div class="left-block hidden-xs">
@@ -2872,9 +2952,12 @@
   </div>
 </div>
 
+<div class="swipe-area"></div>
+
 
 
 	<script src="js/vendor.min.js"></script>
+	<script src="js/jquery.touchSwipe.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

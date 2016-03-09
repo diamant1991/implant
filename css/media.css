@@ -293,13 +293,68 @@
 		opacity: 1 !important;
 		visibility: visible !important;
 	}
+	.swiper-area{
+		display: none;
+	}
 }
 @media(max-width: 767px){
 	.hidden-xs{
 		display: none !important;
 	}
+
+	.diploms .item{
+		padding: 0 10px;
+	}
+	.diploms .item-title{
+		margin-bottom: 15px;
+	}
+	.consult_form3 .form input[type="text"],
+	.consult_form3 .form textarea{
+		width: 90%;
+		margin: auto;
+	}
+	.owl-work .item img{
+		height: 70px;
+	}
+	.consult_form3 .medium_button{
+		width: 100%;
+	}
+	.sentence-top{
+		height: 255px;
+	}
+	.sentence-radio-item{
+		font-size: 14px;
+	}
+	.sentence-bottom .modal-title{
+		font-size: 18px;
+		margin-bottom: 0;
+	}
+	.sentence-title-bold,
+	.sentence-title-orange{
+		margin-bottom: 10px;
+		font-size: 20px;
+	}
+	.consult_form2 .big_button{
+		width: 100% !important;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+	}
 	.small-desc{
 		padding-right: 5px;
+	}
+	.consult_form2 .mobile-title{
+		font-size: 20px;
+		line-height: 1.3;
+	}
+	.consult_form2 .big_button i{
+		top: 4px;
+		left: -5px;
+		position: relative;
+	}
+	.modal-title{
+		font-size: 24px;
+		line-height: 1.1;
 	}
 	.preim .small-block-item:nth-child(2) .link:hover{
 		color: #acd772;
@@ -347,12 +402,12 @@
 		font-size: 30px;
 	}
 	.sentence-price .prev-price{
-		width: 100px;
-		font-size: 18px;
+		width: 105px;
+		font-size: 16px;
 	}
 	.sentence-price .today-price{
-		width: 100px;
-		font-size: 18px;
+		width: 105px;
+		font-size: 16px;
 	}
 	.nav .ico{
 		display: inline-block;
@@ -415,40 +470,7 @@
 	.main-header{
 		height: auto;
 	}
-	.nav{
-		position: absolute;
-		opacity: 0;
-		visibility: hidden;
-		-webkit-transition: all .5s ease-in-out;
-		-moz-transition: all .5s ease-in-out;
-		transition: all .5s ease-in-out;
-		width: 320px;
-		left: -320px;
-		top: 0;
-		background: rgba(255,255,255,0.9);
-		z-index: 1000;
-		height: auto;
-		-webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.23);
-		-moz-box-shadow:    0px 2px 7px 0px rgba(0, 0, 0, 0.23);
-		box-shadow:         0px 2px 7px 0px rgba(0, 0, 0, 0.23);
-	}
-	.nav.active{
-		left: 0;
-		opacity: 1;
-		visibility: visible;
-	}
-	.nav li{
-		float: none;
-		border-bottom: 1px solid #d9dcd3;
-	}
-	.nav li a{
-		background: none !important;
-		font-size: 18px;
-		color: #3a6900;
-		text-transform: uppercase;
-		height: 45px;
-		line-height: 45px;
-	}
+	
 	.preim .title{
 		font-size: 22px;
 		line-height: 1.2;
@@ -634,6 +656,15 @@
 		width: 125px;
 		margin-right: 15px !important;
 	}
+	.price .carousel-wrapper{
+		margin-bottom: 10px;
+	}
+	.price-title{
+		margin-bottom: 5px;
+	}
+	.swiper-slide{
+		padding: 2px 10px;
+	}
 	.price-total{
 		font-size: 18px;
 	}
@@ -671,6 +702,9 @@
 	.big_button,
 	.consult_form2 .big_button{
 		font-size: 13px;
+	}
+	.consult_form2 .big_button{
+		font-size: 15px;
 	}
 	.consult_form .info .big_button{
 		padding-left: 45px;
