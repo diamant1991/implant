@@ -298,6 +298,18 @@
 	.hidden-xs{
 		display: none !important;
 	}
+	.small-desc{
+		padding-right: 5px;
+	}
+	.preim .small-block-item:nth-child(2) .link:hover{
+		color: #acd772;
+	}
+	.preim .link{
+		margin: 10px 0;
+		font-size: 14px;
+    line-height: 1.1;
+    text-decoration: none;
+	}
 	.tech-item{
 		padding-bottom: 20px;
 	}

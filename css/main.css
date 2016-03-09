@@ -20,6 +20,13 @@ body {
   width: 20%;
   padding-top: 10px;
 }
+.mobile__text-tel span,
+.mobile__text-tel b {
+  color: #000 !important;
+}
+.mobile__text-tel {
+  margin-top: 10px;
+}
 .logo {
   margin-bottom: 15px;
 }
